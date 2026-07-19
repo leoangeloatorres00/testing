@@ -30,6 +30,9 @@ jobs:
             echo "Install Composer dependencies..."
             composer install --no-dev --prefer-dist --optimize-autoloader
 
+            echo "Use node 22 version..."
+            nvm use 22
+
             echo "Install Node dependencies..."
             npm install
 
